@@ -19,7 +19,9 @@ func main() {
 		fmt.Println("2. Пополнить счет клиента")
 		fmt.Println("3. Посмотреть баланс клиента")
 		fmt.Println("4. Снять деньги с баланса")
-		fmt.Println("5. Выйти")
+		fmt.Println("5. Перевод денег")
+		fmt.Println("6. Получить прибыль банка")
+		fmt.Println("7. Выйти")
 
 		fmt.Scan(&choice)
 
@@ -33,6 +35,10 @@ func main() {
 		case 4:
 			pkg.WithdrawClientsAccount()
 		case 5:
+			pkg.TransferMoney()
+		case 6:
+			pkg.ShowProfit()
+		case 7:
 			return
 		}
 	}

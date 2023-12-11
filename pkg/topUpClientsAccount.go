@@ -4,7 +4,7 @@ import "fmt"
 
 func TopUpClientsAccount() {
 	var name string
-	var amount int
+	var amount float64
 
 	fmt.Println("Введите имя клиента")
 
